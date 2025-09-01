@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TK WearS - Premium Shoes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-black shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <div class="flex items-center space-x-2">
+        <!-- <img  alt="Logo" class="w-8 h-8"> -->
+        <span class="text-2xl font-bold text-gold">👞 TK WearS</span>
+      </div>
+      <nav class="hidden md:flex space-x-6 text-lg">
+        <a href="#home" class="hover:text-gold">Home</a>
+        <a href="#features" class="hover:text-gold">Features</a>
+        <a href="#products" class="hover:text-gold">Products</a>
+        <a href="#form" class="hover:text-gold">Contact</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden text-white text-2xl">&#9776;</button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-black p-4 space-y-4">
+      <a href="#home" class="block hover:text-gold">Home</a>
+      <a href="#features" class="block hover:text-gold">Features</a>
+      <a href="#products" class="block hover:text-gold">Products</a>
+      <a href="#form" class="block hover:text-gold">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="text-center py-16 bg-gradient-to-b from-black to-gray-900">
+    <h1 class="text-4xl md:text-5xl font-bold text-gold">Step into Style with TK WearS</h1>
+    <p class="mt-4 text-gray-300">Premium shoes crafted for comfort, durability, and elegance.</p>
+    <button class="mt-6 bg-gold text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500">Shop Now</button>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-gold mb-10">Why Choose TK WearS?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+      <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
+        <img src="https://img.icons8.com/ios-filled/100/FFD700/clock.png" class="mx-auto mb-4 w-16">
+        <h3 class="text-xl font-semibold">24/7 Customer Service</h3>
+        <p class="text-gray-400 mt-2">We’re always here to help you with your queries anytime.</p>
+      </div>
+      <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
+        <img src="https://img.icons8.com/ios-filled/100/FFD700/delivery.png" class="mx-auto mb-4 w-16">
+        <h3 class="text-xl font-semibold">Fast Delivery</h3>
+        <p class="text-gray-400 mt-2">Get your shoes delivered at lightning speed, hassle-free.</p>
+      </div>
+      <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
+        <img src="https://img.icons8.com/ios-filled/100/FFD700/lock.png" class="mx-auto mb-4 w-16">
+        <h3 class="text-xl font-semibold">Secure Payment</h3>
+        <p class="text-gray-400 mt-2">Your transactions are safe with our trusted payment system.</p>
+      </div>
+      <div class="p-6 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
+        <img src="https://img.icons8.com/ios-filled/100/FFD700/return-purchase.png" class="mx-auto mb-4 w-16">
+        <h3 class="text-xl font-semibold">Easy Returns</h3>
+        <p class="text-gray-400 mt-2">Not satisfied? Return within 7 days for a hassle-free refund.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-16 bg-gray-900">
+    <h2 class="text-3xl font-bold text-center text-gold mb-10">Our Bestsellers</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 container mx-auto px-6">
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <img src="https://imgs.search.brave.com/0ms2x40AaQJeHzqyqrM7eS8yt5yeCc-TRqRyuZ1DzZg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzE2LzEyLzM2Lzg3/LzM2MF9GXzE2MTIz/Njg3NTdfOWhXNUJt/RnVxbmtFUFV0azZh/ejZrb1BXS2EzQ2da/VzEuanBn" class="rounded-xl mb-4">
+        <h3 class="text-xl font-semibold">SportX Sneakers</h3>
+        <p class="text-gray-400 mt-2">$89.99</p>
+        <button class="mt-4 w-full bg-gold text-black py-2 rounded-lg hover:bg-yellow-500">Buy Now</button>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <img src="https://imgs.search.brave.com/6oxdV4Lv7oVWh1pbk7lnCYveL27HRt_FoH1MYAoKti0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdDIu/ZGVwb3NpdHBob3Rv/cy5jb20vMjc1NjQ1/Mi84MTgxL2kvNDUw/L2RlcG9zaXRwaG90/b3NfODE4MTMzNzIt/c3RvY2stcGhvdG8t/ZmFzaGlvbmFibGUt/bGVhdGhlci1zaG9l/cy1mb3ItbWVuLmpw/Zw" class="rounded-xl mb-4">
+        <h3 class="text-xl font-semibold">Classic Leather</h3>
+        <p class="text-gray-400 mt-2">$120.00</p>
+        <button class="mt-4 w-full bg-gold text-black py-2 rounded-lg hover:bg-yellow-500">Buy Now</button>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <img src="https://imgs.search.brave.com/w816smLJdXLRLaz9Rjc_8CxH5ez3VbZFsqUzNz1RJEY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0Lzdz/YzRnNGhwZXhQOW85/aTZIZzdvQmguanBn" class="rounded-xl mb-4">
+        <h3 class="text-xl font-semibold">Urban Runners</h3>
+        <p class="text-gray-400 mt-2">$99.50</p>
+        <button class="mt-4 w-full bg-gold text-black py-2 rounded-lg hover:bg-yellow-500">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="form" class="py-16 container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-gold mb-6">Get in Touch</h2>
+    <div class="max-w-xl mx-auto bg-gray-800 p-6 rounded-xl shadow-lg">
+      <!-- Your exact form (unchanged) -->
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <title>Home - Submit Form</title>
+      </head>
+      <body>
+        <% if (typeof success !== 'undefined' && success) { %>
+          <p style="color: green;">Form has been submitted!</p>
+        <% } %>
+
+        <h2 class="text-xl text-gold mb-4">Contact Form</h2>
+        <form action="/home" method="POST" class="space-y-4">
+          <label class="block">Full Name:<br>
+            <input type="text" name="full_name" required class="w-full p-2 rounded bg-black border border-gold text-white">
+          </label>
+
+          <label class="block">Phone:<br>
+            <input type="text" name="phone" class="w-full p-2 rounded bg-black border border-gold text-white">
+          </label>
+
+          <label class="block">Email:<br>
+            <input type="email" name="email" class="w-full p-2 rounded bg-black border border-gold text-white">
+          </label>
+
+          <label class="block">Address:<br>
+            <textarea name="address" rows="3" class="w-full p-2 rounded bg-black border border-gold text-white"></textarea>
+          </label>
+
+          <button type="submit" class="bg-gold text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500">Submit</button>
+        </form>
+      </body>
+      </html>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black py-6 text-center border-t border-gray-800">
+    <p class="text-gray-400">© 2025 TK WearS. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Script for Mobile Menu -->
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+  <style>
+    .text-gold { color: #FFD700; }
+    .bg-gold { background-color: #FFD700; }
+    .border-gold { border-color: #FFD700; }
+  </style>
+</body>
+</html>
